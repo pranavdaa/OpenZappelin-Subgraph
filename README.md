@@ -8,6 +8,7 @@ This is an initial guide to get started with using openzeppelin/subgraphs librar
 4. ``` graph codegen ```
 5. ``` graph auth --product hosted-service <token> ```
 6. ``` graph deploy --product hosted-service gituser/filename ```
+7. Delete all the unnecessary files created due to using the Gravitar template 
 
 ## Subgraphs that can be deployed using the openzeppelin/subgraphs library 
 [Refer openzeppelin docs ](https://docs.openzeppelin.com/subgraphs/0.1.x/#modules)
