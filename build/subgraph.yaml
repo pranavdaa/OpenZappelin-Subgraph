@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./node_modules/@openzeppelin/subgraphs/generated/erc20.schema.graphql
+  file: erc20.schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: erc20
@@ -17,10 +17,10 @@ dataSources:
         - ERC20Contract
       abis:
         - name: IERC20
-          file: ./node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
+          file: erc20/node_modules/@openzeppelin/contracts/build/contracts/IERC20Metadata.json
       eventHandlers:
         - event: Approval(indexed address,indexed address,uint256)
           handler: handleApproval
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./node_modules/@openzeppelin/subgraphs/src/datasources/erc20.ts
+      file: erc20/erc20.wasm
